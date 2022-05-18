@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Menu Flutuante</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="navegação">
+        <div class="menu_toggle"></div>
+        <div class="perfil">
+            <div class="imgBox">
+                <img src="img/euPerfil.jpg" alt="usuário">
+            </div>
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="#">
+                    <span class="icone"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="texto">Perfil</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icone"><ion-icon name="chatbox-outline"></ion-icon></span>
+                    <span class="texto">Mensagens</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icone"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="texto">Configurações</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icone"><ion-icon name="help-outline"></ion-icon></span>
+                    <span class="texto">Suporte</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icone"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <span class="texto">Sair</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu_toggle');
+        const navegação = document.querySelector('.navegação');
+
+        menu.onclick = function () {
+            navegação.classList.toggle('active')        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
